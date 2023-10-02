@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Spagetti Bolognse",
+        "description": "Traditional spagetti dish",
+        "img_url": "",
+        "stars": 3
+    }, 
+    {
+        "name": "Chicken Tikka Masala",
+        "description": "Classic curry dish",
+        "img_url": "",
+        "stars": 3
+    },
+    {
+        "name": "Leek and Potato Soup",
+        "description": "Simple soup of potaotes and onions",
+        "img_url": "",
+        "stars": 3
+    }
+]

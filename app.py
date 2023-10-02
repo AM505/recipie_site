@@ -20,7 +20,7 @@ def recipe(recipe_name):
         for obj in data:
             if obj["recipe_url"] == recipe_name:
                 recipe = obj
-    return "<h1>"+recipe["name"]+"</h1>"
+    return "<h1></h1>"
     
 
 if __name__ == "__main__":

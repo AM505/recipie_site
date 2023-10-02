@@ -3,8 +3,9 @@
     <h1>Home Page</h1>
     {% for recipe in recipes %}
         <div class="card">
-            <h2>{{recipe.name}}</h2>
+            <h2><a href="/{{recipe.recipe_url}}">{{recipe.name}}</a></h2>
             <p>{{recipe.description}}</p>
+            <img src="{{url_for('static', filename='img/' + recipe.img_url)}}" alt="">
         </div>
 
     {% endfor %}

@@ -1,0 +1,24 @@
+html
+{
+    width:100%;
+}
+
+.card
+{
+    width:50%;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.card img
+{
+    width: 50%;
+}
+
+.scroll-area{
+    overflow-y: scroll;
+    margin: auto;
+    width: 60%;
+    border: 1px solid red;
+    background-color: aqua;
+}

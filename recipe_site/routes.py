@@ -1,5 +1,6 @@
 from flask import render_template
 from recipe_site import app, db
+from recipe_site import User, Recipe
 
 @app.route("/")
 def home():

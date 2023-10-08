@@ -1,9 +1,11 @@
-from flask import render_template
+from flask import ( render_template, 
+    redirect, request, session, url_for)
 from recipe_site import app,  db
 from recipe_site.models import User, Recipe
 
 @app.route("/")
-def home():
+@app.route("/index")
+def index():
     categories = list(Recipe.query.order_by(Recipe.recipe_name).all())
     return render_template("base.html")
 
@@ -15,4 +17,15 @@ def admin_recipie():
 def add_recipe():
     if request.method == "POST":
         ## get all post vars and stuff
+        print("nothin to see here")
     return render_template("admin_recipe.html")
+
+## lets do user login 
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/register")
+def register():
+    return render_template('register.html')
+

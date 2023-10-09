@@ -8,9 +8,9 @@
     {%endif%}
     {% for recipe in recipes %}
             <div class="card">
-                <h2><a href="/{{recipe.recipe_url}}">{{recipe.name}}</a></h2>
+                <h2><a href="#">{{recipe.name}}</a></h2>
                 <p>{{recipe.description}}</p>
-                <img src="{{url_for('static', filename='img/' + recipe.img_url)}}" alt="">
+                <img src="#" alt="">
             </div>
 
     {% endfor %}

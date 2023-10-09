@@ -11,3 +11,4 @@ env/
 data/
 */static/assets/
 userUtil.py
+recipe_site/static/img/*

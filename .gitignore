@@ -13,3 +13,4 @@ data/
 userUtil.py
 recipe_site/static/img/*
 createTables.py
+*.code-workspace

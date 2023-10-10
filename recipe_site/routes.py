@@ -7,7 +7,7 @@ from recipe_site.models import User, Recipe
 @app.route("/index")#, defaults={'username': None}
 def index():
     recipes = list(Recipe.query.order_by(Recipe.recipe_name).all())
-    return render_template("base.html", recipes=recipes)
+    return render_template("index.html", recipes=recipes)
 
 @app.route("/admin_recipe", methods=["GET", "POST"])
 def admin_recipie():
